@@ -1,0 +1,262 @@
+/* Resources Hero Section */
+.resources-hero {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(234, 88, 12, 0.05) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.resources-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/placeholders/resources-pattern.svg') repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+/* Resource Cards */
+.resource-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.resource-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(249, 115, 22, 0.1);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.resource-download-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.resource-download-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.resource-download-button:hover::after {
+  transform: translateX(100%);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/placeholders/newsletter-pattern.svg') repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.newsletter-form {
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter-input {
+  transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+  transform: translateY(-1px);
+}
+
+/* Blog Preview Cards */
+.blog-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-image {
+  transform: scale(1.05);
+}
+
+.blog-meta {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+  margin: 0.5rem 0;
+}
+
+.blog-excerpt {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.read-more-link {
+  display: inline-flex;
+  align-items: center;
+  color: #f97316;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.read-more-link:hover {
+  color: #ea580c;
+}
+
+.read-more-link svg {
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.read-more-link:hover svg {
+  transform: translateX(4px);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .resources-hero {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.2) 0%, rgba(234, 88, 12, 0.15) 100%);
+  }
+
+  .resource-card {
+    background-color: #1f2937;
+    border-color: rgba(249, 115, 22, 0.2);
+  }
+
+  .resource-card:hover {
+    border-color: rgba(249, 115, 22, 0.4);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .resource-icon {
+    background: rgba(249, 115, 22, 0.2);
+  }
+
+  .blog-card {
+    background-color: #1f2937;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .blog-title {
+    color: #f3f4f6;
+  }
+
+  .blog-excerpt {
+    color: #9ca3af;
+  }
+
+  .blog-meta {
+    color: #9ca3af;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resources-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .resources-hero p {
+    font-size: 1.125rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-button {
+    width: 100%;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* Loading States */
+.loading-spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 3px solid #fff;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

@@ -1,0 +1,64 @@
+# .cursorrules for FoodPreneur Academy Website (Initial Static Phase)
+
+# --- Project Overview ---
+project_description: |
+  A website for FoodPreneur Academy, an online learning platform for independent restaurant owners.
+  This initial version is a static informational website (HTML, CSS, JS) to introduce the academy, showcase offerings (linking out initially), and capture leads.
+  The long-term goal is a full course platform (likely using Kajabi, Podia, or WP+LMS), but generated code *for now* should focus on the static site components.
+
+target_audience: |
+  Independent restaurant owners and managers. Often busy, potentially varying tech-savviness.
+  The website design and language should be professional, clear, practical, and trustworthy.
+
+core_technologies:
+  - HTML5 (Semantic HTML is preferred)
+  - CSS3 (Modern CSS like Flexbox/Grid for layout, potentially CSS variables)
+  - JavaScript (ES6+, for light interactivity, DOM manipulation. Avoid complex frameworks like React/Vue/Angular for this initial static build unless specifically requested for a component.)
+
+# --- Coding Style & Conventions ---
+coding_style_preferences:
+  - Adhere strictly to rules defined in .eslintrc.js (for JavaScript) and .prettierrc.js (for all file types). Run Prettier formatting on generated code.
+  - Use meaningful variable and function names (camelCase for JS, kebab-case for CSS classes/ids).
+  - Write clear, concise comments for complex logic or non-obvious code sections.
+  - Prioritize semantic HTML elements (e.g., <nav>, <header>, <main>, <section>, <article>, <footer>, <button>) over generic <div>s where appropriate.
+  - Ensure all images (<img> tags) have descriptive `alt` attributes for accessibility, or `alt=""` if purely decorative.
+  - Use relative paths for internal assets (CSS, JS, images).
+
+# --- Project Constraints & Goals ---
+project_constraints:
+  - **CRITICAL: "Faceless" Brand.** Do NOT generate code or suggest features that rely on displaying the instructor's face (e.g., avoid placeholder images clearly meant for a headshot unless context specifies otherwise, avoid features requiring live video of instructor for the *static* site). Focus on brand visuals, stock imagery (restaurant/food related), animations, or screen recordings where applicable later.
+  - **Initial Static Site Focus:** Do NOT generate backend code (PHP, Python, Node.js, databases) or complex user authentication systems. The goal is an informational site first. Acknowledge that course sales/delivery will happen on a separate platform or future version.
+  - **Usability & Simplicity:** Prioritize a clean, intuitive user interface. Avoid overly complex animations or interactions that might confuse the target audience or slow down the site.
+  - **Performance:** Generate efficient code. Optimize images if suggesting specific ones (though optimization is usually a build step). Keep JS minimal for core functionality.
+  - **Responsiveness:** All generated layouts and components must be mobile-friendly and responsive across common screen sizes (mobile, tablet, desktop). Use mobile-first approach where sensible.
+
+# --- AI Interaction Guidelines ---
+ai_interaction_guidelines:
+  - When generating code snippets, provide brief explanations of *why* the code works or the approach taken.
+  - If generating larger code blocks (e.g., a full component), structure it clearly and explain the different parts.
+  - When asked to refactor or improve code, explain the changes made.
+  - If multiple valid approaches exist for a problem, briefly mention alternatives and why the suggested one was chosen.
+  - Respect the existing code structure and conventions when editing or adding code.
+  - Avoid using deprecated HTML tags or CSS properties. Check compatibility if using very new features (provide caniuse.com links if necessary).
+
+# --- File Structure (Optional Reference) ---
+# Suggest organizing files like this unless specified otherwise:
+# /index.html
+# /about.html
+# /courses.html
+# /css/
+#   style.css
+# /js/
+#   script.js
+# /images/
+#   logo.png
+#   hero-background.jpg
+
+# --- Do Not Suggest ---
+do_not_suggest:
+  - Backend languages or databases for this initial static build.
+  - Complex JavaScript frameworks (React, Vue, Angular) unless specifically requested for learning/comparison.
+  - Features requiring user logins or payment processing *on this static site*.
+  - Deprecated libraries like jQuery unless explicitly asked for compatibility reasons.
+  - Content or features that violate the "faceless" brand constraint.
+  - Placeholder content that is overly generic; try to use examples relevant to restaurants or business training. 

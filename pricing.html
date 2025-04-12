@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - FoodPreneur Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body class="bg-gray-50">
+    <header class="app-header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="/images/placeholders/logo-icon.svg" alt="FoodPreneur Academy Icon">
+                    FoodPreneur Academy
+                </a>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="pricing.html" class="active">Pricing</a>
+                <a href="signin.html">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Choose Your Path to Food Business Success</h1>
+                <p class="text-xl text-gray-600">Select the perfect plan to transform your restaurant business</p>
+            </div>
+
+            <!-- Money-back Guarantee Banner -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-12 text-center">
+                <div class="flex items-center justify-center space-x-2 mb-2">
+                    <svg class="h-6 w-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                    <span class="font-semibold text-blue-700">30-Day Money-Back Guarantee</span>
+                </div>
+                <p class="text-gray-600">Try our courses risk-free. If you're not satisfied, we'll refund your payment, no questions asked.</p>
+            </div>
+
+            <!-- Billing Toggle -->
+            <div class="flex justify-center mb-12">
+                <div class="bg-white rounded-lg p-1 shadow-sm">
+                    <div class="flex">
+                        <button type="button" class="px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-white" id="monthlyBtn">
+                            Monthly Billing
+                        </button>
+                        <button type="button" class="px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600" id="annualBtn">
+                            Annual Billing (Save 20%)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+                        <p class="text-gray-600 mb-4">Perfect for new restaurant owners</p>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-4xl font-bold text-gray-900">$97</span>
+                            <span class="text-gray-500 ml-1">/month</span>
+                        </div>
+                        <div class="hidden annual-price">
+                            <div class="flex items-baseline mb-2">
+                                <span class="text-4xl font-bold text-gray-900">$77</span>
+                                <span class="text-gray-500 ml-1">/month</span>
+                            </div>
+                            <div class="bg-green-100 text-green-800 text-sm font-medium px-2 py-1 rounded-full inline-block">
+                                Save 20%
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Access to all courses</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Step-by-step restaurant launch plan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Downloadable templates (menu costing, scheduling, budgeting)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Restaurant performance calculator tools</span>
+                        </li>
+                    </ul>
+                    <a href="#starter" class="block w-full py-3 px-4 text-center bg-gray-100 text-gray-900 rounded-lg font-medium hover:bg-gray-200 transition-colors">Start Your Restaurant Journey</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-white rounded-lg shadow-xl p-8 flex flex-col relative transform scale-105">
+                    <div class="absolute top-0 right-0 bg-blue-500 text-white px-4 py-1 rounded-tl-lg rounded-br-lg text-sm font-medium">
+                        Most Popular
+                    </div>
+                    <div class="absolute top-0 left-0 bg-yellow-400 text-gray-900 px-4 py-1 rounded-tr-lg rounded-bl-lg text-sm font-medium">
+                        Best Value
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Pro</h3>
+                        <p class="text-gray-600 mb-4">For growing restaurant businesses</p>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-4xl font-bold text-gray-900">$197</span>
+                            <span class="text-gray-500 ml-1">/month</span>
+                        </div>
+                        <div class="hidden annual-price">
+                            <div class="flex items-baseline mb-2">
+                                <span class="text-4xl font-bold text-gray-900">$157</span>
+                                <span class="text-gray-500 ml-1">/month</span>
+                            </div>
+                            <div class="bg-green-100 text-green-800 text-sm font-medium px-2 py-1 rounded-full inline-block">
+                                Save 20%
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Everything in Starter</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Business health assessment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Certification</span>
+                        </li>
+                    </ul>
+                    <a href="#pro" class="block w-full py-3 px-4 text-center bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">Start Growing Your Business</a>
+                </div>
+
+                <!-- Elite Plan -->
+                <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Elite</h3>
+                        <p class="text-gray-600 mb-4">For established restaurants</p>
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-4xl font-bold text-gray-900">$497</span>
+                            <span class="text-gray-500 ml-1">/month</span>
+                        </div>
+                        <div class="hidden annual-price">
+                            <div class="flex items-baseline mb-2">
+                                <span class="text-4xl font-bold text-gray-900">$397</span>
+                                <span class="text-gray-500 ml-1">/month</span>
+                            </div>
+                            <div class="bg-green-100 text-green-800 text-sm font-medium px-2 py-1 rounded-full inline-block">
+                                Save 20%
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Everything in Pro</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>1-on-1 coaching</span>
+                        </li>
+                    </ul>
+                    <a href="#elite" class="block w-full py-3 px-4 text-center bg-gray-100 text-gray-900 rounded-lg font-medium hover:bg-gray-200 transition-colors">Get Premium Support</a>
+                </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <div class="mt-16 max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Success Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+                                <p class="text-gray-600">Owner, The Local Bistro</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"The Pro plan helped us increase our profit margin by 15% in just 3 months. The business health assessment was a game-changer!"</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Michael Chen</h4>
+                                <p class="text-gray-600">Manager, Fusion Kitchen</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"The Elite plan's 1-on-1 coaching helped us optimize our operations and reduce food waste by 20%. Worth every penny!"</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Emma Rodriguez</h4>
+                                <p class="text-gray-600">Owner, Fresh Bites Cafe</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"Started with the Starter plan and upgraded to Pro. The certification helped us secure a business loan for expansion!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Comparison Table -->
+            <div class="mt-16 max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Plan Comparison</h2>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-4 text-left text-sm font-semibold text-gray-900">Features</th>
+                                <th scope="col" class="px-6 py-4 text-center text-sm font-semibold text-gray-900">Starter</th>
+                                <th scope="col" class="px-6 py-4 text-center text-sm font-semibold text-gray-900">Pro</th>
+                                <th scope="col" class="px-6 py-4 text-center text-sm font-semibold text-gray-900">Elite</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-900">Access to all courses</td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-900">Step-by-step launch plan</td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-900">Downloadable templates</td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-900">Performance calculator tools</td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-900">Business health assessment</td>
+                                <td class="px-6 py-4 text-center"><span class="text-gray-400">-</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-900">Certification</td>
+                                <td class="px-6 py-4 text-center"><span class="text-gray-400">-</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm text-gray-900">1-on-1 coaching</td>
+                                <td class="px-6 py-4 text-center"><span class="text-gray-400">-</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-gray-400">-</span></td>
+                                <td class="px-6 py-4 text-center"><span class="text-green-500">✓</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="mt-16 max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <details class="bg-white p-6 rounded-lg shadow">
+                        <summary class="font-semibold text-gray-900 cursor-pointer">Can I switch plans later?</summary>
+                        <p class="mt-4 text-gray-600">Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.</p>
+                    </details>
+                    <details class="bg-white p-6 rounded-lg shadow">
+                        <summary class="font-semibold text-gray-900 cursor-pointer">What payment methods do you accept?</summary>
+                        <p class="mt-4 text-gray-600">We accept all major credit cards, PayPal, and bank transfers. All payments are processed securely through our payment partners.</p>
+                    </details>
+                    <details class="bg-white p-6 rounded-lg shadow">
+                        <summary class="font-semibold text-gray-900 cursor-pointer">Is there a contract or commitment?</summary>
+                        <p class="mt-4 text-gray-600">No, all plans are month-to-month with no long-term commitment. You can cancel anytime.</p>
+                    </details>
+                    <details class="bg-white p-6 rounded-lg shadow">
+                        <summary class="font-semibold text-gray-900 cursor-pointer">Do you offer discounts for multiple locations?</summary>
+                        <p class="mt-4 text-gray-600">Yes, we offer special pricing for restaurant groups with multiple locations. Please contact our sales team for more information.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-section">
+                    <img src="images/placeholders/logo-icon.svg" alt="FoodPreneur Academy Icon">
+                    <p>
+                        Empowering restaurant owners with the knowledge and tools to
+                        succeed.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="signin.html">Sign In</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="guides.html">Free Guides</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>Email: info@foodpreneuracademy.com</p>
+                    <p>Support Hours: Mon-Fri 9am-5pm EST</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn">🔗</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2025 FoodPreneur Academy. All rights reserved.</div>
+                <div>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Billing toggle functionality
+        const monthlyBtn = document.getElementById('monthlyBtn');
+        const annualBtn = document.getElementById('annualBtn');
+        const monthlyPrices = document.querySelectorAll('.monthly-price');
+        const annualPrices = document.querySelectorAll('.annual-price');
+
+        function showMonthly() {
+            monthlyBtn.classList.add('bg-white', 'text-gray-700');
+            monthlyBtn.classList.remove('bg-blue-600', 'text-white');
+            annualBtn.classList.add('bg-blue-600', 'text-white');
+            annualBtn.classList.remove('bg-white', 'text-gray-700');
+            monthlyPrices.forEach(el => el.classList.remove('hidden'));
+            annualPrices.forEach(el => el.classList.add('hidden'));
+        }
+
+        function showAnnual() {
+            annualBtn.classList.add('bg-white', 'text-gray-700');
+            annualBtn.classList.remove('bg-blue-600', 'text-white');
+            monthlyBtn.classList.add('bg-blue-600', 'text-white');
+            monthlyBtn.classList.remove('bg-white', 'text-gray-700');
+            monthlyPrices.forEach(el => el.classList.add('hidden'));
+            annualPrices.forEach(el => el.classList.remove('hidden'));
+        }
+
+        monthlyBtn.addEventListener('click', showMonthly);
+        annualBtn.addEventListener('click', showAnnual);
+    </script>
+</body>
+</html> 

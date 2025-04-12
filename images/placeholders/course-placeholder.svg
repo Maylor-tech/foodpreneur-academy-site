@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#FF6B35"/>
+  
+  <!-- Course Icon -->
+  <circle cx="400" cy="140" r="70" fill="white" fill-opacity="0.2"/>
+  <path d="M360 140h80m-40-40v80" stroke="white" stroke-width="8"/>
+  
+  <!-- Abstract Course Elements -->
+  <rect x="300" y="240" width="200" height="20" rx="10" fill="white" fill-opacity="0.2"/>
+  <rect x="340" y="280" width="120" height="20" rx="10" fill="white" fill-opacity="0.2"/>
+  
+  <!-- Placeholder Text -->
+  <text x="400" y="170" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Restaurant Management Course</text>
+  <text x="400" y="200" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Master Your Business Skills</text>
+</svg> 

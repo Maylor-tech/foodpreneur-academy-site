@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="225" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="225" fill="#FAFAFA"/>
+  <!-- Circular Pattern -->
+  <circle cx="200" cy="112.5" r="100" stroke="#F97316" stroke-opacity="0.1" stroke-width="1" fill="none"/>
+  <circle cx="200" cy="112.5" r="75" stroke="#F97316" stroke-opacity="0.1" stroke-width="1" fill="none"/>
+  <circle cx="200" cy="112.5" r="50" stroke="#F97316" stroke-opacity="0.1" stroke-width="1" fill="none"/>
+  <!-- Business Chart Icon -->
+  <path d="M160 140l20-30 20 15 40-45" stroke="#F97316" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="160" cy="140" r="4" fill="#F97316"/>
+  <circle cx="180" cy="110" r="4" fill="#F97316"/>
+  <circle cx="200" cy="125" r="4" fill="#F97316"/>
+  <circle cx="240" cy="80" r="4" fill="#F97316"/>
+  <!-- Text Placeholder -->
+  <rect x="120" y="170" width="160" height="8" rx="4" fill="#F97316" fill-opacity="0.3"/>
+  <rect x="160" y="185" width="80" height="8" rx="4" fill="#F97316" fill-opacity="0.2"/>
+</svg> 

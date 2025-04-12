@@ -1,0 +1,313 @@
+/* Resources Hero Section */
+.resources-hero {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(234, 88, 12, 0.05) 100%);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.resources-hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.resources-hero p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Resources Grid */
+.resources-grid {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.resources-grid h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.resources-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Resource Cards */
+.resource-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.resource-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.5rem;
+}
+
+.resource-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.resource-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.resource-content p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.resource-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.file-type, .file-size {
+    background: #f3f4f6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #f97316;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: auto;
+}
+
+.download-btn:hover {
+    background: #ea580c;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background: #1f2937;
+    padding: 4rem 0;
+    color: white;
+}
+
+.newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.newsletter-content p {
+    color: #e5e7eb;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form .form-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.subscribe-btn {
+    background: #f97316;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background: #ea580c;
+}
+
+.form-note {
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resources-hero h1 {
+        font-size: 2rem;
+    }
+
+    .resources-hero p {
+        font-size: 1.125rem;
+    }
+
+    .newsletter-form .form-group {
+        flex-direction: column;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .resources-hero {
+        background: linear-gradient(135deg, rgba(249, 115, 22, 0.2) 0%, rgba(234, 88, 12, 0.15) 100%);
+    }
+
+    .resources-grid {
+        background: #111827;
+    }
+
+    .resource-card {
+        background: #1f2937;
+    }
+
+    .resource-content h3 {
+        color: #f3f4f6;
+    }
+
+    .resource-content p {
+        color: #9ca3af;
+    }
+
+    .resource-meta {
+        color: #9ca3af;
+    }
+
+    .file-type, .file-size {
+        background: #374151;
+        color: #e5e7eb;
+    }
+
+    .newsletter-section {
+        background: #111827;
+    }
+}
+
+/* Popular Resources Section */
+.popular-resources {
+    padding: 4rem 0;
+    background: #f8fafc;
+}
+
+.popular-resources h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.popular-resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.popular-resource-card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.popular-resource-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.download-count {
+    background: #f97316;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.popular-resource-title {
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* Dark Mode Support for Popular Resources */
+@media (prefers-color-scheme: dark) {
+    .popular-resources {
+        background: #1a2234;
+    }
+
+    .popular-resource-card {
+        background: #1f2937;
+    }
+
+    .popular-resource-title {
+        color: #f3f4f6;
+    }
+
+    .section-description {
+        color: #9ca3af;
+    }
+}
+
+/* Responsive Design for Popular Resources */
+@media (max-width: 768px) {
+    .popular-resources {
+        padding: 3rem 0;
+    }
+
+    .popular-resources h2 {
+        font-size: 1.75rem;
+    }
+} 

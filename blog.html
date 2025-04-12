@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/images/placeholders/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - FoodPreneur Academy</title>
+    <meta name="description" content="Expert insights and practical tips for restaurant owners. Learn about restaurant management, marketing, operations, and more.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <script src="js/transitions.js" defer></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="/images/placeholders/logo-icon.svg" alt="FoodPreneur Academy" class="h-8 w-8">
+                    <span class="text-xl font-bold">FoodPreneur Academy</span>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="courses.html" class="text-gray-600 hover:text-blue-600">Courses</a>
+                    <a href="pricing.html" class="text-gray-600 hover:text-blue-600">Pricing</a>
+                    <a href="signin.html" class="text-gray-600 hover:text-blue-600">Sign In</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="text-center mb-12 hero-section">
+            <h1 class="text-4xl font-bold mb-4">Restaurant Business Insights</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Expert articles, tips, and strategies to help you grow and manage your restaurant business
+            </p>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="mb-16 featured-post">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="/images/placeholders/blog-featured.jpg" alt="Featured Blog Post" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 md:w-1/2">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Featured</span>
+                            <span class="text-gray-500 text-sm ml-4">May 15, 2024</span>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-4">5 Essential Strategies for Restaurant Profitability</h2>
+                        <p class="text-gray-600 mb-6">
+                            Discover proven methods to increase your restaurant's profitability, from menu engineering to cost control. Learn how successful restaurants maintain healthy margins while delivering exceptional value to customers.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/images/placeholders/author-1.jpg" alt="Author" class="h-10 w-10 rounded-full">
+                                <div class="ml-3">
+                                    <h4 class="font-semibold">Michael Chen</h4>
+                                    <p class="text-sm text-gray-600">Restaurant Consultant</p>
+                                </div>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="mb-12 categories-section">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button type="button" class="px-6 py-2 rounded-full bg-blue-600 text-white">All Articles</button>
+                <button type="button" class="px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300">Business Strategy</button>
+                <button type="button" class="px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300">Marketing</button>
+                <button type="button" class="px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300">Operations</button>
+                <button type="button" class="px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300">Finance</button>
+                <button type="button" class="px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300">Staff Management</button>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 articles-grid">
+            <!-- Article 1 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/images/placeholders/blog-1.jpg" alt="Menu Engineering" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="text-gray-500 text-sm">April 28, 2024</span>
+                        <span class="mx-2 text-gray-300">•</span>
+                        <span class="text-blue-600 text-sm">Business Strategy</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">The Art of Menu Engineering</h3>
+                    <p class="text-gray-600 mb-4">
+                        Learn how to design a profitable menu that drives sales and customer satisfaction. Discover the psychology behind menu design and pricing strategies.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="/images/placeholders/author-2.jpg" alt="Author" class="h-8 w-8 rounded-full">
+                            <span class="ml-2 text-sm text-gray-600">Sarah Johnson</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/images/placeholders/blog-2.jpg" alt="Social Media Marketing" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="text-gray-500 text-sm">April 20, 2024</span>
+                        <span class="mx-2 text-gray-300">•</span>
+                        <span class="text-blue-600 text-sm">Marketing</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Social Media Strategies for Restaurants</h3>
+                    <p class="text-gray-600 mb-4">
+                        Master the art of restaurant social media marketing. Learn how to create engaging content, build a loyal following, and drive more customers through your doors.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="/images/placeholders/author-3.jpg" alt="Author" class="h-8 w-8 rounded-full">
+                            <span class="ml-2 text-sm text-gray-600">David Lee</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/images/placeholders/blog-3.jpg" alt="Staff Training" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="text-gray-500 text-sm">April 12, 2024</span>
+                        <span class="mx-2 text-gray-300">•</span>
+                        <span class="text-blue-600 text-sm">Staff Management</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Effective Staff Training Programs</h3>
+                    <p class="text-gray-600 mb-4">
+                        Create a comprehensive staff training program that reduces turnover and improves service quality. Learn the key elements of successful restaurant training.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="/images/placeholders/author-4.jpg" alt="Author" class="h-8 w-8 rounded-full">
+                            <span class="ml-2 text-sm text-gray-600">Emily Chen</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/images/placeholders/blog-4.jpg" alt="Cost Control" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="text-gray-500 text-sm">April 5, 2024</span>
+                        <span class="mx-2 text-gray-300">•</span>
+                        <span class="text-blue-600 text-sm">Finance</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Restaurant Cost Control Strategies</h3>
+                    <p class="text-gray-600 mb-4">
+                        Learn how to effectively control costs without compromising quality. Discover practical tips for inventory management, portion control, and waste reduction.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="/images/placeholders/author-5.jpg" alt="Author" class="h-8 w-8 rounded-full">
+                            <span class="ml-2 text-sm text-gray-600">Robert Smith</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/images/placeholders/blog-5.jpg" alt="Customer Experience" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="text-gray-500 text-sm">March 28, 2024</span>
+                        <span class="mx-2 text-gray-300">•</span>
+                        <span class="text-blue-600 text-sm">Operations</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Enhancing Customer Experience</h3>
+                    <p class="text-gray-600 mb-4">
+                        Discover proven strategies to create memorable dining experiences that keep customers coming back. Learn how to exceed expectations at every touchpoint.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="/images/placeholders/author-6.jpg" alt="Author" class="h-8 w-8 rounded-full">
+                            <span class="ml-2 text-sm text-gray-600">Lisa Wong</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/images/placeholders/blog-6.jpg" alt="Restaurant Technology" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="text-gray-500 text-sm">March 20, 2024</span>
+                        <span class="mx-2 text-gray-300">•</span>
+                        <span class="text-blue-600 text-sm">Operations</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Essential Restaurant Technology</h3>
+                    <p class="text-gray-600 mb-4">
+                        Explore the must-have technology solutions for modern restaurants. From POS systems to inventory management, learn what tools can streamline your operations.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="/images/placeholders/author-7.jpg" alt="Author" class="h-8 w-8 rounded-full">
+                            <span class="ml-2 text-sm text-gray-600">James Wilson</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="bg-blue-600 rounded-xl p-8 text-center text-white mb-16 newsletter-section">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Subscribe to our newsletter for the latest restaurant business insights and tips
+            </p>
+            <form class="max-w-md mx-auto">
+                <div class="flex">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-l-lg focus:outline-none">
+                    <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded-r-lg font-semibold hover:bg-gray-100">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="/images/placeholders/logo-icon.svg" alt="FoodPreneur Academy" class="h-8 w-8 mb-4">
+                    <p class="text-gray-400">Empowering restaurant owners with the knowledge and tools to succeed.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-white">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="guides.html" class="text-gray-400 hover:text-white">Free Guides</a></li>
+                        <li><a href="success-stories.html" class="text-gray-400 hover:text-white">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400">Email: info@foodpreneuracademy.com</p>
+                    <p class="text-gray-400">Support Hours: Mon-Fri 9am-5pm EST</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 FoodPreneur Academy. All rights reserved.</p>
+                <div class="mt-4">
+                    <a href="privacy.html" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

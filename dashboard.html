@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/images/placeholders/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - FoodPreneur Academy</title>
+    <meta
+      name="description"
+      content="Access your courses, track progress, and manage your restaurant business training with FoodPreneur Academy's dashboard.">
+    
+    <!-- Preconnect to important third-party domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .progress-75 {
+            width: 75%;
+        }
+        .progress-40 {
+            width: 40%;
+        }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Sidebar -->
+    <aside class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out sidebar">
+      <div class="flex flex-col h-full">
+        <div class="flex items-center justify-center h-16 border-b">
+          <img src="/images/placeholders/logo-icon.svg" alt="FoodPreneur Academy" class="h-8 w-8">
+          <span class="ml-2 text-xl font-bold">FoodPreneur</span>
+        </div>
+        <nav class="flex-1 px-4 py-4">
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 rounded-lg">
+                <i class="fas fa-home mr-3"></i>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-book mr-3"></i>
+                My Courses
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-download mr-3"></i>
+                Resources
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line mr-3"></i>
+                Progress
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-cog mr-3"></i>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="md:ml-64">
+      <!-- Top Navigation -->
+      <header class="bg-white shadow-sm">
+        <div class="flex items-center justify-between px-4 py-4">
+          <button type="button" class="md:hidden text-gray-600" id="sidebarToggle" aria-label="Toggle sidebar">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="flex items-center space-x-4">
+            <div class="relative">
+              <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <i class="fas fa-search absolute left-3 top-2.5 text-gray-400"></i>
+            </div>
+            <div class="flex items-center space-x-4">
+              <button type="button" class="text-gray-600 hover:text-gray-800" aria-label="Notifications">
+                <i class="fas fa-bell"></i>
+              </button>
+              <div class="flex items-center">
+                <img src="/images/placeholders/avatar.jpg" alt="User" class="h-8 w-8 rounded-full">
+                <span class="ml-2 text-sm font-medium">John Doe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="p-6">
+        <!-- Welcome Section -->
+        <section class="mb-8 fade-in">
+          <h1 class="text-2xl font-bold mb-2">Welcome back, John!</h1>
+          <p class="text-gray-600">Continue your learning journey and track your progress</p>
+        </section>
+
+        <!-- Progress Overview -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 slide-up">
+          <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-lg font-semibold mb-2">Course Progress</h3>
+            <div class="flex items-center justify-between">
+              <div class="text-3xl font-bold text-blue-600">65%</div>
+              <div class="w-16 h-16">
+                <svg class="w-full h-full" viewBox="0 0 36 36">
+                  <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e2e8f0" stroke-width="3"/>
+                  <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="65, 100"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-lg font-semibold mb-2">Completed Courses</h3>
+            <div class="text-3xl font-bold text-green-600">3</div>
+            <p class="text-sm text-gray-600 mt-2">Out of 5 enrolled</p>
+          </div>
+          <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-lg font-semibold mb-2">Learning Streak</h3>
+            <div class="text-3xl font-bold text-purple-600">7 days</div>
+            <p class="text-sm text-gray-600 mt-2">Keep it up!</p>
+          </div>
+        </section>
+
+        <!-- Current Courses -->
+        <section class="mb-8 fade-in">
+          <h2 class="text-xl font-bold mb-4">Continue Learning</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <div class="p-6">
+                <h3 class="text-lg font-semibold mb-2">Menu Engineering &amp; Pricing</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                  <div class="bg-blue-600 h-2.5 rounded-full progress-75"></div>
+                </div>
+                <div class="flex justify-between text-sm text-gray-600 mb-4">
+                  <span>75% Complete</span>
+                  <span>3 of 4 modules</span>
+                </div>
+                <a href="#" class="text-blue-600 hover:text-blue-800">Continue Course →</a>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <div class="p-6">
+                <h3 class="text-lg font-semibold mb-2">Staff Training &amp; Management</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                  <div class="bg-blue-600 h-2.5 rounded-full progress-40"></div>
+                </div>
+                <div class="flex justify-between text-sm text-gray-600 mb-4">
+                  <span>40% Complete</span>
+                  <span>2 of 5 modules</span>
+                </div>
+                <a href="#" class="text-blue-600 hover:text-blue-800">Continue Course →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="slide-up">
+          <h2 class="text-xl font-bold mb-4">Recent Activity</h2>
+          <div class="bg-white rounded-lg shadow overflow-hidden">
+            <ul class="divide-y divide-gray-200">
+              <li class="p-4">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-check-circle text-green-500"></i>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm font-medium">Completed Module 3 of Menu Engineering</p>
+                    <p class="text-xs text-gray-500">2 hours ago</p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-4">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-download text-blue-500"></i>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm font-medium">Downloaded Staff Training Template</p>
+                    <p class="text-xs text-gray-500">Yesterday</p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-4">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-certificate text-yellow-500"></i>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm font-medium">Earned Restaurant Operations Certificate</p>
+                    <p class="text-xs text-gray-500">3 days ago</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/transitions.js" defer></script>
+    <script>
+      // Toggle sidebar on mobile
+      document.getElementById('sidebarToggle').addEventListener('click', () => {
+        document.querySelector('.sidebar').classList.toggle('-translate-x-full');
+      });
+    </script>
+  </body>
+</html> 

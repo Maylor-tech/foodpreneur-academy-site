@@ -1,0 +1,158 @@
+/* Mission Hero Section */
+.mission-hero {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(234, 88, 12, 0.05) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/placeholders/mission-pattern.svg') repeat;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+/* Values Section */
+.value-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: rgba(249, 115, 22, 0.3);
+}
+
+.value-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(249, 115, 22, 0.1);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* Expertise Section */
+.expertise-content {
+    position: relative;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.expertise-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #f97316, #ea580c);
+    border-radius: 2px;
+}
+
+/* Impact Section */
+.impact-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.impact-number {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #f97316, #ea580c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(234, 88, 12, 0.05) 100%);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .mission-hero {
+        background: linear-gradient(135deg, rgba(249, 115, 22, 0.2) 0%, rgba(234, 88, 12, 0.15) 100%);
+    }
+
+    .value-card {
+        background-color: #1f2937;
+        border-color: rgba(249, 115, 22, 0.2);
+    }
+
+    .value-card:hover {
+        border-color: rgba(249, 115, 22, 0.4);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .value-icon {
+        background: rgba(249, 115, 22, 0.2);
+    }
+
+    .expertise-content {
+        background-color: #1f2937;
+    }
+
+    .impact-card {
+        background-color: #1f2937;
+    }
+
+    .impact-label {
+        color: #9ca3af;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .mission-hero p {
+        font-size: 1.125rem;
+    }
+
+    .value-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .impact-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease forwards;
+} 

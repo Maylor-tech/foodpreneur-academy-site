@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Health Calculator - FoodPreneur Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="/images/placeholders/logo-icon.svg" alt="FoodPreneur Academy Icon">
+                    FoodPreneur Academy
+                </a>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="resources.html">Resources</a>
+                <a href="signin.html">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-hero">
+            <div class="container">
+                <h1>Restaurant Business Health Calculator</h1>
+                <p>Get instant insights into your restaurant's financial health and receive personalized recommendations</p>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <div class="container">
+                <form id="businessCalculator" class="calculator-form">
+                    <div class="form-group">
+                        <label for="dailySales">Average Daily Sales ($)</label>
+                        <input type="number" id="dailySales" name="dailySales" required min="0" step="0.01">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dailyCosts">Average Daily Costs ($)</label>
+                        <input type="number" id="dailyCosts" name="dailyCosts" required min="0" step="0.01">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="staffHours">Total Staff Hours per Day</label>
+                        <input type="number" id="staffHours" name="staffHours" required min="0" step="0.5">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hourlyWage">Average Hourly Wage ($)</label>
+                        <input type="number" id="hourlyWage" name="hourlyWage" required min="0" step="0.01">
+                    </div>
+
+                    <button type="submit" class="calculate-button">Calculate Business Health</button>
+                </form>
+
+                <div id="calculatorResult" class="calculator-result" style="display: none;"></div>
+            </div>
+        </section>
+
+        <section class="calculator-info">
+            <div class="container">
+                <h2>How to Use This Calculator</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="icon">📊</div>
+                        <h3>Daily Sales</h3>
+                        <p>Enter your average daily revenue from food and beverage sales.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">💰</div>
+                        <h3>Daily Costs</h3>
+                        <p>Include food costs, utilities, and other daily operating expenses.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">👥</div>
+                        <h3>Staff Hours</h3>
+                        <p>Total hours worked by all staff members in a typical day.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">💵</div>
+                        <h3>Hourly Wage</h3>
+                        <p>Average hourly wage paid to your staff members.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-section">
+                    <img src="images/placeholders/logo-icon.svg" alt="FoodPreneur Academy Icon">
+                    <p>Empowering restaurant owners with the knowledge and tools to succeed.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="calculator.html">Business Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>Email: info@foodpreneuracademy.com</p>
+                    <p>Support Hours: Mon-Fri 9am-5pm EST</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2025 FoodPreneur Academy. All rights reserved.</div>
+                <div>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/business-calculator.js"></script>
+</body>
+</html> 

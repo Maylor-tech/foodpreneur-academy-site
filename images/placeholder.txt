@@ -1,0 +1,18 @@
+Required Images:
+
+1. logo-icon.png (50x50px)
+2. blog-placeholder-1.jpg (800x400px)
+3. blog-placeholder-2.jpg (800x400px)
+4. blog-placeholder-3.jpg (800x400px)
+5. course-placeholder-1.jpg (800x400px)
+6. course-placeholder-2.jpg (800x400px)
+7. course-placeholder-3.jpg (800x400px)
+8. story-placeholder-1.jpg (800x400px)
+9. story-placeholder-2.jpg (800x400px)
+10. story-placeholder-3.jpg (800x400px)
+
+You can create these images using:
+1. Stock photo websites
+2. AI image generators
+3. Your own photography
+4. Placeholder image services like https://placeholder.com 

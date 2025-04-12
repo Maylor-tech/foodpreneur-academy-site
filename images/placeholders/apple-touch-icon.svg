@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="20" fill="#f97316"/>
+  <path d="M45 90L90 45L135 90L90 135L45 90Z" fill="white"/>
+  <path d="M60 90L90 60L120 90L90 120L60 90Z" fill="#f97316"/>
+</svg> 

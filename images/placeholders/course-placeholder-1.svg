@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="225" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="225" fill="#FAFAFA"/>
+  <!-- Grid Pattern -->
+  <path d="M0 45h400 M0 90h400 M0 135h400 M0 180h400" stroke="#F97316" stroke-opacity="0.1" stroke-width="1"/>
+  <path d="M80 0v225 M160 0v225 M240 0v225 M320 0v225" stroke="#F97316" stroke-opacity="0.1" stroke-width="1"/>
+  <!-- Restaurant Icon -->
+  <circle cx="200" cy="90" r="40" fill="#F97316" fill-opacity="0.2"/>
+  <path d="M180 90h40 M185 80l30 20 M185 100l30-20" stroke="#F97316" stroke-width="3" stroke-linecap="round"/>
+  <!-- Text Placeholder -->
+  <rect x="120" y="150" width="160" height="8" rx="4" fill="#F97316" fill-opacity="0.3"/>
+  <rect x="160" y="165" width="80" height="8" rx="4" fill="#F97316" fill-opacity="0.2"/>
+</svg> 
